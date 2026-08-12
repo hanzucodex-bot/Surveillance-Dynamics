@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Surveillance Dynamics</title>
+    <link rel="icon" type="image/png" href="images/NEW.jpg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-layout-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 50px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .contact-form-card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: var(--card-shadow);
+            border-top: 6px solid var(--brand-orange);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-main);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid rgba(224, 224, 224, 0.8);
+            border-radius: 6px;
+            font-size: 15px;
+            color: var(--text-main);
+            background: #f8fafc;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+            line-height: 1.6;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--brand-orange);
+            background: #ffffff;
+            box-shadow: 0 0 0 3px rgba(224, 109, 19, 0.1);
+        }
+        .whatsapp-link {
+            color: #16a34a !important;
+            font-weight: 800;
+        }
+        @media (max-width: 900px) {
+            .contact-layout-grid { grid-template-columns: 1fr; gap: 40px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/NEW.jpg" alt="Surveillance Dynamics Logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About</a>
+                <div class="dropdown">
+                    <a href="services.html" class="nav-item dropbtn">Services &darr;</a>
+                    <div class="dropdown-content">
+                        <a href="services.html">All Services</a>
+                        <a href="cctv.html">CCTV Surveillance</a>
+                        <a href="access-control.html">Access Control</a>
+                        <a href="alarms.html">Intrusion Alarms</a>
+                    </div>
+                </div>
+                <a href="solutions.html" class="nav-item">Custom Design</a>
+                <a href="contact.html" class="nav-item active">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="page-wrapper contact-bg">
+        <div class="contact-layout-grid animate-fade-in">
+            
+            <div class="premium-card contact-card" style="margin: 0; width: 100%;">
+                <h2 class="section-heading">Connect With Us</h2>
+                <p class="section-description">
+                    Reach out directly to schedule a technical physical site assessment with our custom planning teams.
+                </p>
+                <div class="divider-glow" style="margin: 20px 0;"></div>
+                
+                <div class="contact-grid">
+                    <div class="contact-row">
+                        <div class="icon-box">&#128241;</div>
+                        <div class="contact-info">
+                            <label>WhatsApp / Mobile Line</label>
+                            <a class="whatsapp-link" href="https://wa.me/27846786336?text=Hi%20Surveillance%20Dynamics%2C%20I%20would%20like%20to%20schedule%20a%20security%20assessment." target="_blank" rel="noopener">084 678 6336</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <div class="icon-box">&#128222;</div>
+                        <div class="contact-info">
+                            <label>Telephone Office</label>
+                            <a href="tel:0333456696">033 345 6696</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <div class="icon-box">&#128423;</div>
+                        <div class="contact-info">
+                            <label>Fax Lines</label>
+                            <span>086 600 5040</span>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <div class="icon-box">&#128231;</div>
+                        <div class="contact-info">
+                            <label>Email Address</label>
+                            <a href="mailto:sd@axxess.co.za" class="email-link">sd@axxess.co.za</a>
+                        </div>
+                    </div>
+                    <div class="contact-row">
+                        <div class="icon-box">&#127386;</div>
+                        <div class="contact-info">
+                            <label>Official Web Domain</label>
+                            <a href="http://www.surveillancedynamics.co.za" target="_blank">www.surveillancedynamics.co.za</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-card">
+                <h3 class="section-heading" style="margin-bottom: 8px;">Schedule an Assessment</h3>
+                <p class="section-description" style="margin-bottom: 25px;">
+                    Send us your details below, and one of our custom security planners will contact you shortly.
+                </p>
+                
+                <form action="#" method="POST" onsubmit="sendWhatsAppAssessment(event);">
+                    <div class="form-group">
+                        <label for="client_name">Full Name</label>
+                        <input type="text" id="client_name" class="form-control" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="client_phone">Contact Number</label>
+                        <input type="tel" id="client_phone" class="form-control" placeholder="082 123 4567" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="client_email">Email Address</label>
+                        <input type="email" id="client_email" class="form-control" placeholder="john@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="client_msg">Enter Description</label>
+                        <textarea id="client_msg" class="form-control" placeholder="Briefly describe your property layout, access points, current security setup, and what you need help with..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%; background: var(--brand-orange); border: none; font-size: 16px; margin-top: 10px;">
+                        Send Request on WhatsApp
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column" style="max-width: 320px;">
+                <p class="footer-text">Engineering reliable, high-tier electronic security architectures since inception. Solutions by Design.</p>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Our Team</a></li>
+                    <li><a href="services.html">Security Services</a></li>
+                    <li><a href="solutions.html">System Design</a></li>
+                    <li><a href="projects.html">Corporate Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">System Support</h4>
+                <ul class="footer-links">
+                    <li><a href="faq.html">Read the FAQs</a></li>
+                    <li><a href="contact.html">Request Technical Help</a></li>
+                    <li><a href="contact.html">Schedule Maintenance</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Office Inquiry</h4>
+                <p class="footer-text" style="margin-bottom: 8px;"><strong>Office Phone:</strong> <a href="tel:0333456696" style="color: #ffffff; text-decoration: none;">033 345 6696</a></p>
+                <p class="footer-text" style="margin-bottom: 8px;"><strong>Mobile Support:</strong> <a href="tel:0846786336" style="color: #ffffff; text-decoration: none;">084 678 6336</a></p>
+                <p class="footer-text"><strong>Direct Email:</strong> <a href="mailto:sd@axxess.co.za" style="color: var(--brand-orange); text-decoration: none;">sd@axxess.co.za</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Surveillance Dynamics. All Rights Reserved.</span>
+            <span>Designed in Partnership with HD Web Dev</span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        function sendWhatsAppAssessment(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('client_name').value.trim();
+            const phone = document.getElementById('client_phone').value.trim();
+            const email = document.getElementById('client_email').value.trim();
+            const message = document.getElementById('client_msg').value.trim();
+            const text = encodeURIComponent(`Hi Surveillance Dynamics, I would like to schedule a security assessment.
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Description: ${message}`);
+
+            window.open(`https://wa.me/27846786336?text=${text}`, '_blank', 'noopener');
+        }
+    </script>
+</body>
+</html>

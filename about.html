@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Surveillance Dynamics</title>
+    <link rel="icon" type="image/png" href="images/NEW.jpg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), 
+                        url('1000027227.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 120px 20px 60px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .inner-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 30px;
+        }
+        .split-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .split-layout { grid-template-columns: 1fr; gap: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="images/NEW.jpg" alt="Surveillance Dynamics Logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item active">About</a>
+                <div class="dropdown">
+                    <a href="services.html" class="nav-item dropbtn">Services &darr;</a>
+                    <div class="dropdown-content">
+                        <a href="services.html">All Services</a>
+                        <a href="cctv.html">CCTV Surveillance</a>
+                        <a href="access-control.html">Access Control</a>
+                        <a href="alarms.html">Intrusion Alarms</a>
+                    </div>
+                </div>
+                <a href="solutions.html" class="nav-item">Custom Design</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="about-hero">
+        <span class="status-badge">CORPORATE PROFILE</span>
+        <h1 class="brand-title" style="color: #ffffff; margin-top: 10px;">WHO WE ARE</h1>
+        <p class="brand-tagline" style="color: var(--brand-orange);">SOLUTIONS BY DESIGN</p>
+    </header>
+
+    <main class="inner-container">
+        <div class="split-layout">
+            <div class="animate-fade-in">
+                <h2 class="section-heading" style="color: var(--brand-blue);">Engineering Asset Safety With Precision</h2>
+                <div class="divider-glow" style="margin: 20px 0;"></div>
+                <p class="section-description" style="margin-bottom: 20px;">
+                    Surveillance Dynamics stands at the forefront of premium electronic security consulting and deployment. We focus heavily on structural risk mitigation, creating complete protection systems for high-value properties, corporate offices, and commercial facilities.
+                </p>
+                <p class="section-description">
+                    We bypass generic setups, choosing instead to design custom architectures where every camera placement, entry gate, and physical barrier works together seamlessly.
+                </p>
+            </div>
+            <div class="premium-card" style="border-top-color: var(--brand-orange); padding: 40px;">
+                <h3 class="section-heading" style="font-size: 20px; margin-bottom: 20px;">Our True Mission</h3>
+                <blockquote style="border-left: 4px solid var(--brand-blue); padding-left: 20px; font-style: italic; color: var(--text-charcoal); line-height: 1.6; margin-bottom: 20px;">
+                    "To provide our clients with complete peace of mind through custom-engineered, reliable, and highly integrated physical security solutions that stand up to modern challenges."
+                </blockquote>
+                <p class="section-description" style="font-size: 14px; margin: 0;">
+                    We make sure our systems are robust, simple to manage, and scalable for your future growth.
+                </p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 80px;">
+            <span class="status-badge" style="background: var(--brand-blue);">CORE PRINCIPLES</span>
+            <h2 class="section-heading" style="margin-top: 15px;">What Guides Our Engineering</h2>
+        </div>
+
+        <div class="values-grid">
+            <div class="feature-box">
+                <h3>Absolute Reliability</h3>
+                <p>We source only high-tier, field-tested components capable of 24/7/365 performance, even under extreme conditions.</p>
+            </div>
+            <div class="feature-box" style="border-left-color: var(--brand-orange);">
+                <h3>Custom Innovation</h3>
+                <p>We actively incorporate modern video analytics, touchless biometric entryways, and intelligent multi-zone control frameworks.</p>
+            </div>
+            <div class="feature-box">
+                <h3>True Integration</h3>
+                <p>We tie video streams, entrance checkpoints, and perimeter alarm sensors into a unified, easy-to-use security console.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column" style="max-width: 320px;">
+                <p class="footer-text">Engineering reliable, high-tier electronic security architectures since inception. Solutions by Design.</p>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Our Team</a></li>
+                    <li><a href="services.html">Security Services</a></li>
+                    <li><a href="solutions.html">System Design</a></li>
+                    <li><a href="projects.html">Corporate Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">System Support</h4>
+                <ul class="footer-links">
+                    <li><a href="faq.html">Read the FAQs</a></li>
+                    <li><a href="contact.html">Request Technical Help</a></li>
+                    <li><a href="contact.html">Schedule Maintenance</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Office Inquiry</h4>
+                <p class="footer-text" style="margin-bottom: 8px;"><strong>Office Phone:</strong> <a href="tel:0333456696" style="color: #ffffff; text-decoration: none;">033 345 6696</a></p>
+                <p class="footer-text" style="margin-bottom: 8px;"><strong>Mobile Support:</strong> <a href="tel:0846786336" style="color: #ffffff; text-decoration: none;">084 678 6336</a></p>
+                <p class="footer-text"><strong>Direct Email:</strong> <a href="mailto:sd@axxess.co.za" style="color: var(--brand-orange); text-decoration: none;">sd@axxess.co.za</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Surveillance Dynamics. All Rights Reserved.</span>
+            <span>Designed in Partnership with HD Web Dev</span>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
